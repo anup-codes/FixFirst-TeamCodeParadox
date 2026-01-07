@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>FixFirst | Login & Signup</title>
+
+  <style>
+    body {
+      font-family: Segoe UI, sans-serif;
+      background: linear-gradient(135deg, #667eea, #764ba2);
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .auth-container {
+      background: #fff;
+      width: 400px;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+    }
+    .auth-header {
+      background: linear-gradient(135deg, #667eea, #764ba2);
+      color: #fff;
+      padding: 25px;
+      text-align: center;
+    }
+    .auth-body { padding: 25px; }
+    .toggle-buttons { display: flex; margin-bottom: 20px; }
+    .toggle-buttons button {
+      flex: 1; padding: 10px; border: none; cursor: pointer;
+      background: #eee; font-weight: 600;
+    }
+    .toggle-buttons .active {
+      background: linear-gradient(135deg, #667eea, #764ba2);
+      color: #fff;
+    }
+    .form-group { margin-bottom: 15px; }
+    input {
+      width: 100%; padding: 10px;
+      border: 2px solid #ddd; border-radius: 6px;
+    }
+    .submit-btn {
+      width: 100%; padding: 12px;
+      background: linear-gradient(135deg, #667eea, #764ba2);
+      color: #fff; border: none; border-radius: 6px;
+      font-weight: 600; cursor: pointer;
+    }
+    .hidden { display: none; }
+  </style>
+</head>
+
+<body>
+
+<div class="auth-container">
+  <div class="auth-header">
+    <h1>🔧 FixFirst</h1>
+    <p>Login to fix the right issue first</p>
+  </div>
+
+  <div class="auth-body">
+    <div class="toggle-buttons">
+      <button id="loginToggle" class="active">🔐 Login</button>
+      <button id="signupToggle">👤 Signup</button>
+    </div>
+
+    <!-- Login -->
+    <form id="loginForm">
+      <div class="form-group">
+        <input type="email" id="login-email" placeholder="Email" required>
+      </div>
+      <div class="form-group">
+        <input type="password" id="login-password" placeholder="Password" required>
+      </div>
+      <button class="submit-btn">✅ Login</button>
+    </form>
+
+    <!-- Signup -->
+    <form id="signupForm" class="hidden">
+      <div class="form-group">
+        <input type="text" id="signup-name" placeholder="Full Name" required>
+      </div>
+      <div class="form-group">
+        <input type="email" id="signup-email" placeholder="Email" required>
+      </div>
+      <div class="form-group">
+        <input type="password" id="signup-password" placeholder="Password" required>
+      </div>
+      <button class="submit-btn">🚀 Create Account</button>
+    </form>
+  </div>
+</div>
+<script src="login.js" type="module"></script>
+<!-- Firebase Logic
+<script type="module">
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js";
+  import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword } 
+  from "https://www.gstatic.com/firebasejs/10.7.1/firebase-auth.js";
+ 
+  const firebaseConfig = {
+    apiKey: "AIzaSyCfSUC1gtTe7l-vqLckcaYbuunj3QC_Vu4",
+    authDomain: "fixfirst-6dfc4.firebaseapp.com",
+    projectId: "fixfirst-6dfc4",
+    storageBucket: "fixfirst-6dfc4.firebasestorage.app",
+    messagingSenderId: "736565909662",
+    appId: "1:736565909662:web:4cfcf7dc795681c276438f"
+  };
+
+  const app = initializeApp(firebaseConfig);
+  const auth = getAuth(app);
+
+  const loginToggle = document.getElementById("loginToggle");
+  const signupToggle = document.getElementById("signupToggle");
+  const loginForm = document.getElementById("loginForm");
+  const signupForm = document.getElementById("signupForm");
+
+  loginToggle.onclick = () => {
+    loginToggle.classList.add("active");
+    signupToggle.classList.remove("active");
+    loginForm.classList.remove("hidden");
+    signupForm.classList.add("hidden");
+  };
+
+  signupToggle.onclick = () => {
+    signupToggle.classList.add("active");
+    loginToggle.classList.remove("active");
+    signupForm.classList.remove("hidden");
+    loginForm.classList.add("hidden");
+  };
+
+  // Signup
+  signupForm.addEventListener("submit", (e) => {
+    e.preventDefault();
+    const email = document.getElementById("signup-email").value;
+    const password = document.getElementById("signup-password").value;
+
+    createUserWithEmailAndPassword(auth, email, password)
+      .then(() => {
+        alert("Signup successful ✅");
+        window.location.href = "index.html";
+      })
+      .catch(err => alert(err.message));
+  });
+
+  // Login
+  loginForm.addEventListener("submit", (e) => {
+    e.preventDefault();
+    const email = document.getElementById("login-email").value;
+    const password = document.getElementById("login-password").value;
+
+    signInWithEmailAndPassword(auth, email, password)
+      .then(() => {
+        window.location.href = "index.html";
+      })
+      .catch(err => alert(err.message));
+  }); -->
+<!-- </script> -->
+
+</body>
+</html>
