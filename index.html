@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FixFirst - Community Issue Tracker</title>
+   <link rel="stylesheet" href="FixFirst.css"> 
+
+
+  </head>
+<body>
+  <div class="container">
+    <header>
+      <h1>🔧 FixFirst</h1>
+ 
+      <p>Community Issue Tracker with Smart Priority Scoring</p>
+    </header> 
+
+    <div class="content">
+      <!-- Section 1: Issue Submission Form -->
+      <section id="submission-section">
+        <h2>📝 Report an Issue</h2>
+        <form id="issueForm">
+          <div class="form-group">
+            <label for="issueTitle">Issue Title</label>
+            <input 
+              type="text" 
+              id="issueTitle" 
+              placeholder="e.g., Pothole near Main Gate" 
+              required
+            >
+          </div>
+
+          <div class="form-group">
+            <label for="issueCategory">Category</label>
+            <select id="issueCategory" required>
+              <option value="">-- Select Category --</option>
+              <option value="Water">💧 Water</option>
+              <option value="Electricity">⚡ Electricity</option>
+              <option value="Road">🚧 Road</option>
+              <option value="Garbage">🗑️ Garbage</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="issueDescription">Description (Provide more details)</label>
+            <textarea 
+              id="issueDescription" 
+              placeholder="Describe the issue in detail. This helps admins understand the problem better."
+              required
+            ></textarea>
+          </div>
+
+          <button type="submit">Submit Issue</button>
+          <button class="logout-button"> Logout</button>
+        </form>
+      </section>
+
+     <div class="priority-info">
+  <h3 class="heading">ℹ️How Priority Works</h3>
+      
+        <strong>🟥High:</strong> Water-related issues that may impact health and survival
+        <br><strong>🟨Medium:</strong> Electricity issues  with potential safety concerns 
+        <br><strong>🟩Low:</strong> Road maintenance and garbage collection issues
+      
+    </div>
+  
+     
+
+      <!-- Section 2: Admin Dashboard -->
+      <section id="dashboard-section">
+        <h2>📊 User Dashboard – Prioritized Issues</h2>
+        <div id="issuesList"></div>
+      </section>
+      
+      
+      
+    </div>
+  </div>
+
+   <footer>
+      <p class="conclusion">✨ Fix First doesn't collect more complaints — it helps fix the right one first.</p>
+<br><br><br><br><br>
+
+                <!-- Section 3: Meet the Developers -->
+      <section id="developers-section">
+        <h2 class="developers-heading">Our Developers</h2>
+        
+        <div class="developers-grid">
+          <div class="developer-item">
+            <div class="developer-avatar">
+              <div class="avatar-inner">
+                <img src="https://img.freepik.com/premium-vector/caucasian-female-software-developer-her-40s-debugging-program_1238364-88698.jpg?semt=ais_hybrid&w=740&q=80">
+              </div>
+            </div>
+            <h3>Anushka Singh</h3>
+            <p class="role">Frontend Designer</p>
+            <p class="bio">Passionate about creating beautiful and user-friendly interfaces.</p>
+            <p>
+              <a href="https://www.linkedin.com/in/anushka-singh-193673b80" target="_blank"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjYTLRluQ369jRaRaYBdh65haTY6eG_Agozg&s"  class="logo"></a>
+            
+            
+            <a href="https://github.com/anushkasingh50683-star" target="_blank"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIqVLx1eZWBsj68Zlp7BhY3Y_yRy_YOKqMFw&s" class="logo"></a>
+
+            <a href="https://x.com/Anushka2344?t=6FEUt16JKndExPp4FJGW6w&s=08" target="_blank"> <img src="https://encrypted-tbn0.gstatic.com/favicon-tbn?q=tbn:ANd9GcSg4KQ402AA11YGGoAp9UVW3_Is25CiL9bWcn3rINg-PAnx0OVwWmnqkXNs2k15-QlAc3Lfw1L2xI1GjDIWMSxFEwP3QODG81V85w" class="logo"></a>
+            </p>
+              
+          </div>
+
+          <div class="developer-item">
+            <div class="developer-avatar">
+              <div class="avatar-inner">
+                <img src="https://img.freepik.com/premium-vector/gamer-man_961307-25037.jpg?semt=ais_hybrid&w=740&q=80" alt="">
+              </div>
+            </div>
+            <h3>Anup Kumar</h3>
+            <p class="role">Frontend Developer</p>
+            <p class="bio">Loves turning ideas into functional and efficient code.</p>
+            <p>
+              <a href="https://www.linkedin.com/in/anup-kumar-145656381" target="_blank"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjYTLRluQ369jRaRaYBdh65haTY6eG_Agozg&s"  class="logo"></a>
+            
+            
+            
+            <a href="https://github.com/anup-codes" target="_blank"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIqVLx1eZWBsj68Zlp7BhY3Y_yRy_YOKqMFw&s" class="logo"></a>
+
+            <a href="https://x.com/anup2812007?s=20" target="_blank"> <img src="https://encrypted-tbn0.gstatic.com/favicon-tbn?q=tbn:ANd9GcSg4KQ402AA11YGGoAp9UVW3_Is25CiL9bWcn3rINg-PAnx0OVwWmnqkXNs2k15-QlAc3Lfw1L2xI1GjDIWMSxFEwP3QODG81V85w" class="logo"></a>
+          </p>
+          </div>
+        </div>
+      </section>
+
+    </footer>
+    
+    
+<script src="FixFirst.js" type="module"></script>
+    
+
+</body>
+</html>
