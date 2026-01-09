@@ -49,3 +49,36 @@ fix-first/
 * Many issue-tracking systems fail to highlight critical problems efficiently.
 * FixFirst ensures high-priority issues receive immediate attention,
   improving response time and overall system reliability.
+
+
+## 📸 Project Screenshots
+
+
+
+### 🔐 Login Page
+![Login Page] 
+<img width="927" height="607" alt="image" src="https://github.com/user-attachments/assets/5688c694-3400-4220-ade2-1428c5ef7158" />
+
+
+
+### 🏠 Home Page
+![Home Page]
+<img width="1334" height="609" alt="image" src="https://github.com/user-attachments/assets/c4fd0fc7-f09d-44ad-89fb-9a038b40ff99" />
+
+
+
+### 🧾 Issue Submission
+![Issue Form]
+<img width="1351" height="609" alt="image" src="https://github.com/user-attachments/assets/329fbfc4-fa86-4618-b7e9-8d683831232d" />
+
+
+### 🧾 User DashBoard
+ <img width="1354" height="614" alt="image" src="https://github.com/user-attachments/assets/23dc8a7d-0e61-4215-8c8a-75936591a912" />
+
+
+
+### 📊 Admin Dashboard
+![Admin Dashboard](
+<img width="1330" height="610" alt="image" src="https://github.com/user-attachments/assets/be168595-12de-4bca-be1f-f4cd4d2ea28e" />
+
+
