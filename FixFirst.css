@@ -345,3 +345,6 @@ footer {
     align-items: flex-start;
   }
 }
+.issue-card button {
+  margin-top: 18px;
+}
