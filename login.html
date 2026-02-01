@@ -7,49 +7,111 @@
 
  <link rel="stylesheet" href="login.css">
 </head>
-
 <body>
 
-<div class="auth-container">
-  <div class="auth-header">
-    <h1>🔧 FixFirst</h1>
-    <p>Login to fix the right issue first</p>
-  </div>
+<div class="app-wrapper">
 
-  <div class="auth-body">
-    <div class="toggle-buttons">
-      <button id="loginToggle" class="active">🔐 Login</button>
-      <button id="signupToggle">👤 Signup</button>
+  <!-- LEFT: INTRO / FEATURES -->
+  <section class="intro">
+  <div class="intro-content">
+
+    <span class="badge">🚀 Smart Issue Management</span>
+
+    <h1>
+      Fix issues <span class="highlight">that matter most</span><br />
+      with <strong>FixFirst</strong>
+    </h1>
+
+    <p class="subtitle">
+      FixFirst is a priority-based issue management platform that helps
+      organizations resolve critical problems faster — without chaos,
+      delays, or lost complaints.
+    </p>
+
+    <div class="feature-grid">
+      <div class="feature-card">
+        <h3>🚨 Priority-Based Reporting</h3>
+        <p>
+          Users report issues with High, Medium, or Low priority so urgent
+          problems are never ignored.
+        </p>
+      </div>
+
+      <div class="feature-card">
+        <h3>📊 Real-Time Tracking</h3>
+        <p>
+          Track every issue from reported → in progress → resolved with full transparency.
+        </p>
+      </div>
+
+      <div class="feature-card">
+        <h3>🧑‍💼 Admin Control Panel</h3>
+        <p>
+          Admins see critical issues first and manage workloads efficiently.
+        </p>
+      </div>
+
+      <div class="feature-card">
+        <h3>⏱ Faster Resolution</h3>
+        <p>
+          No more buried messages in WhatsApp groups or ignored emails.
+        </p>
+      </div>
     </div>
 
-    <!-- Login -->
-    <form id="loginForm">
-      <div class="form-group">
-        <input type="email" id="login-email" placeholder="Email" required>
-      </div>
-      <div class="form-group">
-        <input type="password" id="login-password" placeholder="Password" required>
-      </div>
-      <button class="submit-btn">✅ Login</button>
-    </form>
+    <div class="use-cases">
+      <p><strong>Perfect for:</strong></p>
+      <span>🏫 Colleges</span>
+      <span>🏢 Offices</span>
+      <span>🏠 Hostels</span>
+      <span>🏘 Societies</span>
+    </div>
 
-    <!-- Signup -->
-    <form id="signupForm" class="hidden">
-      <div class="form-group">
-        <input type="text" id="signup-name" placeholder="Full Name" required>
-      </div>
-      <div class="form-group">
-        <input type="email" id="signup-email" placeholder="Email" required>
-      </div>
-      <div class="form-group">
-        <input type="password" id="signup-password" placeholder=" Create Password" required>
-      </div>
-      <button class="submit-btn">🚀 Create Account</button>
-    </form>
+    <p class="footer-note">
+      FixFirst brings structure, priority, and accountability to issue handling.
+    </p>
+
   </div>
+</section>
+
+  <!-- RIGHT: AUTH -->
+  <section class="auth">
+    <div class="auth-card">
+
+      <div class="auth-header">
+        <h2>Get Started</h2>
+        <p>Login or create your FixFirst account</p>
+      </div>
+
+      <div class="toggle-buttons">
+        <button id="loginToggle" class="active">Login</button>
+        <button id="signupToggle">Signup</button>
+      </div>
+
+      <!-- LOGIN -->
+      <form id="loginForm">
+        <input type="email" id="login-email" placeholder="Email address" required />
+        <input type="password" id="login-password" placeholder="Password" required />
+        <button class="submit-btn">Login</button>
+      </form>
+
+      <!-- SIGNUP -->
+      <form id="signupForm" class="hidden">
+        <input type="text" placeholder="Full name" required />
+        <input type="email" id="signup-email" placeholder="Email address" required />
+        <input type="password" id="signup-password" placeholder="Create password" required />
+        <button class="submit-btn">Create Account</button>
+      </form>
+
+    </div>
+  </section>
 
 </div>
+
 <script src="login.js" type="module"></script>
+</body>
+
+
  
 </body>
 </html>
