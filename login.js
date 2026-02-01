@@ -62,5 +62,3 @@
       })
       .catch(err => alert(err.message));
   });
-
-  
